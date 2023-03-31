@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  size: 200vh;
+  background-color: rgb(58, 58, 58);
+}
+
+.gameBoard {
+  display: flexbox; /* how come it can't work with flex? */
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  height: 800px;
+  width: 400px;
+  box-shadow: 2px 2px 1000px #ffffff;
+  border-radius: 10px;
+}
+
+.jsDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  background-color: greenyellow;
+}
+
+.userDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  width: 400px;
+  background-color: yellow;
+}
+
+.userInputBoard {
+  display: grid;
+  height: 620px;
+  width: 400px;
+  background-color: #413f3f;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-column-align: center;
+  -ms-grid-row-align: center;
+  justify-content: center;
+  align-items: center; /* ok now how do I get my buttons to align in the center of my specified grid? */
+}
+
+.button {
+  display: flex;
+  height: 110px;
+  width: 70px;
+  background-color: rgb(186, 255, 195);
+  border-radius: 30%;
+  box-shadow: 2px 2px 2px #ffffff;
+}
+
+#button04 {
+  height: 260px;
+  grid-area: 1/4/3/5;
+  border-radius: 10%;
+}
+
+#button11 {
+  height: 260px;
+  grid-area: 3/4/5/5;
+  border-radius: 10%;
+}
+
+#button12 {
+  width: 170px;
+  height: 100px;
+  grid-area: 4/1/5/3;
+  border-radius: 10%;
+}
