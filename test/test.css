@@ -1,0 +1,36 @@
+.userDisplayBoard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.userDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100px;
+  font-family: garamond, sans-serif;
+  font-size: 50px;
+}
+/* add a padding so that the user's number doesn't stick to the side. */
+
+.randOperation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  font-family: garamond, sans-serif;
+  font-size: 70px;
+}
+
+.randomNumber {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  font-family: garamond, sans-serif;
+  font-size: 50px;
+}
