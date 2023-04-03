@@ -140,8 +140,6 @@ tryAgain.addEventListener("click", function (event) {
 //I need to make sure the timer resets on each win. can I have the timer reset on each click of the enter button? or when the counter goes up?
 //For the next iteration of this game, I need to add in the math function. I think I can use if (Math.floor((Math.random() - 0.5) > 0) {use +} else {use -},
 //but do I need to use string to number method to check for correct answers?
-//Below is my timer code. Already copy and pasted into "Enter"'s if else statement.
-//==========================================================================================================================================================
 
 // const timerDisplay = document.querySelector(".timer");
 // let timer = 10;
@@ -162,4 +160,3 @@ tryAgain.addEventListener("click", function (event) {
 // countdownTimer();
 
 // const coundownTimer = setInterval(countdown, 1000);
-//============================================================================================================================================================

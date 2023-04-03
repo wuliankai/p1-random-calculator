@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RandomCalculator</title>
     <link rel="stylesheet" type="text/css" href="randomCalculator.css" />
   </head>
   <body>
+    <div2 class="winCounter"></div2>
+
     <div class="gameBoard">
-      <div class="jsDisplay">0123456789</div>
-      <div class="userDisplay">0987654321</div>
+      <div class="jsDisplay"></div>
+      <div class="userDisplay"></div>
       <div class="userInputBoard">
         <button class="button" id="button01"></button>
         <button class="button" id="button02"></button>
@@ -27,6 +29,13 @@
         <button class="button" id="button13"></button>
       </div>
     </div>
+
+    <div class="timer"></div>
+
+    <div3 class="container" style="display: none">
+      <div1 class="gameLost"></div1>
+      <button class="tryAgain">Try Again</button>
+    </div3>
   </body>
   <script src="randomCalculator.js"></script>
 </html>
