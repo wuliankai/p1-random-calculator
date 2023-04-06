@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  size: 200vw;
+  background-color: rgb(58, 58, 58);
+}
+
+.winCounter {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.gameBoard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 1600px;
+  box-shadow: 2px 2px 1000px #ffffff;
+  border-radius: 10px;
+}
+
+.jsDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100px;
+  width: 1600px;
+  font-family: symbol;
+  font-size: 70px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.userDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 120px;
+  width: 1600px;
+  font-family: symbol;
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* how do I add padding while making sure the userDisplay stays within the gameBoard element? */
+
+.userInputBoard {
+  display: grid;
+  height: 620px;
+  width: 1600px;
+  font-family: symbol;
+  background-color: #413f3f;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; /* ok now how do I get my buttons to align in the center of my specified grid? */
+}
+/* managed to get the buttons to center using "justify-items" instead of "justify-content", which is more common.
+  what is the difference between justtify-content/items and align-conten/items? */
+
+#button27 {
+  height: 130px;
+  width: 100px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Garamond, sans-serif;
+  font-size: 30px;
+  background-color: rgb(202, 240, 252);
+  border-radius: 30%;
+  box-shadow: 2px 2px 5px #ffffff;
+}
+
+#button28 {
+  height: 130px;
+  width: 100px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Garamond, sans-serif;
+  font-size: 30px;
+  background-color: rgb(202, 240, 252);
+  border-radius: 30%;
+  box-shadow: 2px 2px 5px #ffffff;
+}
+
+#blank {
+  color: rgb(58, 58, 58);
+}
+
+.button {
+  display: flex;
+  height: 130px;
+  width: 100px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: symbol;
+  font-size: 50px;
+  background-color: rgb(202, 240, 252);
+  border-radius: 30%;
+  box-shadow: 2px 2px 5px #ffffff;
+}
+
+.button:hover {
+  background-color: rgb(130, 240, 255);
+  cursor: alias;
+}
+
+.button:active {
+  box-shadow: 0 5px 5px #8d8c8c;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameLost {
+  color: red;
+  font-size: 100px;
+}
+
+.tryAgain {
+  font-size: 100px;
+  align-self: center;
+  color: lightgray;
+  background-color: rgb(58, 58, 58);
+}
+
+.back {
+  font-size: 100px;
+  align-self: center;
+  color: lightgray;
+  background-color: rgb(58, 58, 58);
+}

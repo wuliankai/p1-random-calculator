@@ -169,6 +169,7 @@ const allDivs = document.querySelectorAll("div");
 const loseStateContainer = document.querySelector(".container");
 const loseState = document.querySelector(".gameLost");
 const tryAgain = document.querySelector(".tryAgain");
+const back = document.querySelector(".back");
 
 function gameLost() {
   for (const eachDiv of allDivs) {
@@ -181,6 +182,10 @@ function gameLost() {
 
 tryAgain.addEventListener("click", function (event) {
   location.reload();
+});
+
+back.addEventListener("click", function () {
+  window.location.href = "../index.html";
 });
 
 //==========================================================================================================================================================

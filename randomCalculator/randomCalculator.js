@@ -44,9 +44,9 @@ document.addEventListener("click", function (event) {
 });
 //=====================================================
 
-//==============================================================
-//now I need to input player's selected number into userDisplay
-//==============================================================
+//==============
+//Timer function
+//==============
 
 let jsDisplay = document.querySelector(".jsDisplay");
 let userDisplay = document.querySelector(".userDisplay");
@@ -115,13 +115,14 @@ userInputBoard.addEventListener("click", function (event) {
 });
 
 //what is a switch statement
-//====================================================================
-//Now I need to add a timer and what happens lose state is triggered.
-//====================================================================
+//====================
+//Lose state triggered
+//====================
 const allDivs = document.querySelectorAll("div");
 const loseStateContainer = document.querySelector(".container");
 const loseState = document.querySelector(".gameLost");
 const tryAgain = document.querySelector(".tryAgain");
+const back = document.querySelector(".back");
 
 function gameLost() {
   for (const eachDiv of allDivs) {
@@ -134,6 +135,10 @@ function gameLost() {
 
 tryAgain.addEventListener("click", function (event) {
   location.reload();
+});
+
+back.addEventListener("click", function () {
+  window.location.href = "../index.html";
 });
 
 //==========================================================================================================================================================

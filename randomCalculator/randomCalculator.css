@@ -122,6 +122,15 @@ what is the difference between justtify-content/items and align-conten/items? */
 .tryAgain {
   font-size: 100px;
   align-self: center;
+  color: lightgray;
+  background-color: rgb(58, 58, 58);
+}
+
+.back {
+  font-size: 100px;
+  align-self: center;
+  color: lightgray;
+  background-color: rgb(58, 58, 58);
 }
 
 .timer {
